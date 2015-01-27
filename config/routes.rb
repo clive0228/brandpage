@@ -3,7 +3,10 @@ Brandpage::Application.routes.draw do
 	post "wall/write_complete"
 	get "wall/posts" 
 	get 'home/hello'
-	
+	get "wall/edit/:id" => "wall#edit"	
+	post "wall/edit_complete"
+	get "wall/delete/:id" => "wall#delete"
+	post "wall/delete_complete"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
