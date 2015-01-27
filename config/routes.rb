@@ -1,7 +1,9 @@
 Brandpage::Application.routes.draw do
-  get "wall/write" => "wall#write"
-  post "wall/posts" => "wall#posts"
-	get 'home/hello' => 'home#hello'
+  get "wall/write"  
+	post "wall/write_complete"
+	get "wall/posts" 
+	get 'home/hello'
+	
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

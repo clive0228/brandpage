@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-			<title>Herding Group::BOARD</title>
-			<meta charset="utf-8">
-			<link rel="stylesheet" type="text/css" href="wall.css">
-	</head>
-	<body>
-	<h4><%= flash[:alert] %></h4>
+<h4><%= flash[:alert] %></h4>
 
-	<div style="background-color:#e9eaed; text-align:center;">
-		<h1>Write Post</h1>
-		<form action="/wall/write_complete" method="post">
-			Name<br>
-			<input type="text" name="writer" placeholder="What`s your name?"><br>
-			Content <br>
-			<textarea name="content" cols="40" rows="5" placeholder="Write something..."></textarea><br>
-			<input type="submit" value="write">
-		</form>
-	</div>
-	</body>
-</html>
+<div style="background-color:#e9eaed; text-align:center;">
+	<h1>Write Post</h1>
+	<form action="/wall/write_complete" method="post">
+		Name<br>
+		<input type="text" name="writer" placeholder="What`s your name?"><br>
+		Content <br>
+		<textarea name="content" cols="40" rows="5" placeholder="Write something..."></textarea><br>
+		<input type="submit" value="write">
+	</form>
+</div>
