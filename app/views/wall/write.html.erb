@@ -6,6 +6,8 @@
 			<link rel="stylesheet" type="text/css" href="wall.css">
 	</head>
 	<body>
+	<h4><%= flash[:alert] %></h4>
+
 	<div style="background-color:#e9eaed; text-align:center;">
 		<h1>Write Post</h1>
 		<form action="/wall/write_complete" method="post">
