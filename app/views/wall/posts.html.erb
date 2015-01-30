@@ -15,5 +15,10 @@
 		<% end %>
 	</div><br>
 	<% end %>
-	<a href="/wall/write">Write post again</a>
+	<a href="/wall/write">Write post again</a><br>
+	<a href="/">Go Home</a>
 </div>
+
+<% User.all.each do |user| %>
+<p><%= user.username %></p>
+<% end %>
